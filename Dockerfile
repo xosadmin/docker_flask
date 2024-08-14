@@ -10,10 +10,10 @@ RUN apt-get update -y && apt-get install -y \
 
 WORKDIR /app
 
-COPY start.sh /app/
+COPY start.sh /etc/
 
-RUN chmod +x /app/start.sh
+RUN chmod +x /etc/start.sh
 
-EXPOSE 8000
+EXPOSE 5000
 
-CMD ["/app/start.sh"]
+CMD ["/etc/start.sh"]
