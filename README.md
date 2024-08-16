@@ -8,3 +8,9 @@ A debian-based docker container for running Flask program.
    ``docker run -d -p 5000:5000 -v /path/to/your/app:/app foo``
 4. Enjoy
   
+### Launch new container from Docker Hub  
+
+Use the following command:  
+- Python Dev Server  
+``docker run -d -p 5000:5000 -v /path/to/your/app:/app xosadmin/docker-flask:dev``  
+- uWSGI Server: Coming Soon  
