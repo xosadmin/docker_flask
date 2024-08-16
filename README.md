@@ -14,3 +14,7 @@ Use the following command:
 - Python Dev Server  
 ``docker run -d -p 5000:5000 -v /path/to/your/app:/app xosadmin/docker-flask:dev``  
 - uWSGI Server: Coming Soon  
+  
+### uWSGI custom configuration  
+If you plan to use uWSGI custom configuration, please place your ``uwsgi.ini`` in the root directory of application.  
+If there is no ``uwsgi.ini`` in the root directory, default parameters (0.0.0.0:5000) will be adopted.  
