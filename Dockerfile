@@ -1,10 +1,11 @@
-FROM debian:latest
+FROM debian:stable-slim
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && apt-get install -y \
     python3 \
     python3-pip \
     python3-venv \
+    --no-install-recommends && \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
