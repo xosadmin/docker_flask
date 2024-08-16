@@ -13,4 +13,7 @@ A debian-based docker container for running Flask program.
 Use the following command:  
 - Python Dev Server  
 ``docker run -d -p 5000:5000 -v /path/to/your/app:/app xosadmin/docker-flask:dev``  
-- uWSGI Server: Coming Soon  
+- uWSGI Server (Experimental, default parameters):  
+``docker run -d -p 5000:5000 -v /path/to/your/app:/app xosadmin/docker-flask:uwsgi-test``  
+- uWSGI Server (Experimental, custom config):  
+``docker run -d -p <Your port> -v /path/to/your/app:/app xosadmin/docker-flask:uwsgi-test``  
