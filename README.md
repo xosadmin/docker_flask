@@ -15,5 +15,5 @@ Use the following command:
 ``docker run -d -p 5000:5000 -v /path/to/your/app:/app xosadmin/docker-flask:dev``  
 - uWSGI Server (Experimental, default parameters):  
 ``docker run -d -p 5000:5000 -v /path/to/your/app:/app xosadmin/docker-flask:uwsgi-test``  
-- uWSGI Server (Experimental, custom config):  
+- uWSGI Server (Experimental, custom config ``uwsgi.ini``):  
 ``docker run -d -p <Your port> -v /path/to/your/app:/app xosadmin/docker-flask:uwsgi-test``  
