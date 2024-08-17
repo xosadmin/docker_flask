@@ -12,6 +12,8 @@ RUN apt-get update -y && apt-get install -y \
 
 RUN apt install gcc -y
 
+RUN pip3 install --no-cache-dir flask uwsgi --break-system-packages
+
 WORKDIR /app
 
 COPY start.sh /etc/
