@@ -5,7 +5,6 @@ if [ ! -f "/app/requirements.txt" ]; then
     exit 1
 fi
 
-pip3 install --no-cache-dir flask uwsgi --break-system-packages
 pip3 install --no-cache-dir -r /app/requirements.txt --break-system-packages
 cd /app
 if [ ! -f "/app/uwsgi.ini" ]; then
